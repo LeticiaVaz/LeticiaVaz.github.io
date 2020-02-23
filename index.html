@@ -5,70 +5,182 @@
 
 	<head>
 		<meta charset = "UTF-8">
-		<title> Images and links</title>
+    <title> Images and links</title>
+    
+    <style> 
+      h1#name {
+        margin-bottom:15px;
+        font-size:60px;
+        color:white;
+        text-align:center;
+        text-decoration:underline;
+        background-color:rgb(43, 128, 128);
+
+      }
+    
+      
+      img.sticky {
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+       
+        position: absolute;
+        top: 200px;
+        right: 0px; 
+}
+          
+      div {
+          width: 300px;
+          border: 3px solid white;
+          padding: 20px;
+          margin: 5px;
+          position: absolute;
+          top: 595px;
+          right: 0px;
+        }
+      
+      h1#mytitle {
+        margin-bottom:8px;
+        font-size:30px;
+        position: absolute;  
+        top: 120px;
+        right: 80px;
+      }
+      
+      body {background-color:rgb(211, 223, 213);}
+
+      .box-set {
+        position: relative;
+        height: 400px;
+        background: darkgray;
+}
+
+      .box {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        background: white;
+        border: 2px solid rgb(189, 179, 179);
+      }
+
+      .box-1 {
+        top: 20px;
+        width: 50px;
+        height: 50px;
+        background: #4547d4;
+        margin: 0 auto;
+        }
+
+        .box-2 {
+        top: 20px;
+        width: 50px;
+        height: 50px;
+        background: #9b2a39;
+        margin: 0 auto;
+        position:absolute
+        
+                }
+        .box-3 {
+        top: 20px;
+        width: 50px;
+        height: 50px;
+        background: #c05c1a;
+        margin: 0 auto;
+        left:0cm;
+        
+               }
+        .content_table {
+          border-collapse:collapse;
+          margin:25px 0;
+          font-size: 0.9em;
+          min-width: 400px;
+          
+        }
+
+        .content_table thead{
+          font-size: 25px;
+          font-weight: bold;
+          color: rgb(43, 128, 128);
+          border-radius: 5px 5px 0 0;
+          overflow: hidden;
+          box-shadow: 0 0 20px  rgba(43, 128, 128, 0.9);
+        }
+        .content_table th{
+          background-color:gray;
+          font-size: 1.2em;
+          color: white;
+          text-align: left;
+          height: 50px;
+          width: 200px;
+        }
+        .content_table td{
+          border-bottom: 1px solid gray;
+          height: 30px;
+        }
+
+        .links {
+          color:rgb(43, 128, 128);
+          margin-bottom:8px;
+          font-size:15px;
+          top: 1px;
+          right: 80px;
+        }
+
+
+    </style>
 
     </head>
     
     <body>
-      
-        <a href="https://leticiavaz.github.io/myProject-/" target="_blank">Back to home</a>
-        <h1>Leticia Vaz</h1>
-    <table style="width:180%">
-        <tr>
-            <th></th>
-            <th>Finance Manager </th>
-            
-        </tr>
+
+        <h1 id="name">Leticia Vaz</h1>
+        <h1 id="mytitle">Data Scientist</h1>
+        <ul class = "links">
+          <li><a href="https://leticiavaz.github.io/myProject-/" target="_blank">Back to home</a></li>
+          <li><a href="https://www.linkedin.com/in/leticia-vaz-91059655/" target="_blank">Linkedin</a></li>
+          <li><a href="https://github.com/LeticiaVaz" target="_blank">github</a></li>
+      </ul>
+      <hr>
+      <table class = 'content_table'>
+        <thead>
+          <tr>
+          <td colspan="4">&nbsp;<center>Areas of Expertise include</center></td> </tr>
+        </thead>
+      <tr>
+        <th>Industry Knowledge</th>
+        <th>Tools & Technologies</th>
+        <th>Interpersonal Skills</th>
+        <th>Other Skills</th>
+      </tr>
+    
+      <tr>
+        <td>Budget Management</td>
+        <td>Financial Analysis</td>
+        <td>Data Analysis</td>
+        <td>Training & Development</td>
+      </tr>
+      <tr>
+        <td>Revenue & Profit Growth</td>
+        <td>Python </td>
+        <td>Balance Sheet</td>
+        <td>jupyter</td>
+      </tr>
     </table>
 
-        <hr>
-        <img src="./profile.png" width="200" alt="">
+    <!---
+    <div class= "box">
+      <figure class="box-1">Box 1</figure>
+      <figure class="box-2">Box 2</figure>
+      <figure class="box-3">Box 3</figure>
+      <figure class="box-4">Box 4</figure>
+    </div>
+    -->
+        
+        <img class="sticky" src="./profile.png" width="350" alt="">
 
-        <p>Analytical professional with an aptitude for innovation and creative problem solving. </p>
-        <p>Collaborative communicator continually focused on building relationships and promoting </p>
-        <p>synergy across business lines and global units to drive positive change, cohesive, </p>
-        <p>comprehensive business approaches and enhanced profitability</p>
-
-
-        <table style="width:50%">
-
-            <<table border="1">
-                <thead>
-                <tr>
-                <td colspan="4">&nbsp;<center>Areas of Expertise include</center></td> </tr>
-            <tr>
-              <th>Industry Knowledge</th>
-              <th>Tools & Technologies</th>
-              <th>Interpersonal Skills</th>
-              <th>Other Skills</th>
-            </tr>
-            <tr>
-              <td>Budget Management</td>
-              <td>Financial Analysis</td>
-              <td>Data Analysis</td>
-              <td>Training & Development</td>
-            </tr>
-            <tr>
-              <td>Revenue & Profit Growth</td>
-              <td>Python </td>
-              <td>Balance Sheet</td>
-              <td>jupyter</td>
-            </tr>
-          </table>
-
-        <ul>
-            <li><a href="https://www.linkedin.com/in/leticia-vaz-91059655/" target="_blank">Linkedin</a></li>
-            <li><a href="https://developer.mozilla.org/en-US/" target="_blank">Mozilla Developer Network</a></li>
-            <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
-          </ul>
-
-
-        <p>Professional Experience</p>
-        <h3>XCELERATION PARTNERS (Finance Manager</h3>
-        <h3>XPNC Bank (Financial Consulting</h3>
-
-
-
+        <div>Analytical professional with an aptitude for innovation and creative problem solving. 
+        Collaborative communicator continually focused on building relationships and promoting
+        synergy across business lines and global units to drive positive change, cohesive, 
+        comprehensive business approaches and enhanced profitability</div>
 
     </body>
 
